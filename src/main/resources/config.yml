@@ -1,0 +1,19 @@
+# === SkyblockPlugin config ===
+
+# Naziv svijeta u kojem se generiraju otoci (plugin ce ga kreirati ako ne postoji)
+world-name: "skyblock_world"
+
+# Razmak izmedju otoka (blokova) - sprjecava da se otoci dodiruju
+island-spacing: 250
+
+# Y koordinata na kojoj se generira sredina otoka
+island-y: 100
+
+# Maksimalan broj clanova po otoku (vlasnik + pozvani clanovi) - podrazumijevano 2
+max-members: 2
+
+# Radijus zastite oko sredista otoka (blokova) - samo vlasnik/clanovi mogu graditi/rusiti unutar njega
+protection-radius: 60
+
+# Lokacija spawna na serveru gdje se igrac vraca sa /island leave, itd. (world;x;y;z)
+spawn-location: "world;0;100;0"

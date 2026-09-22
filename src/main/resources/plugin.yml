@@ -1,0 +1,23 @@
+name: SkyblockPlugin
+version: '1.0.0'
+main: com.example.skyblock.SkyblockPlugin
+api-version: '26.2'
+author: Claude
+description: SkyBlock plugin s klasicnim i pustinjskim otocima, za do 2 igraca po otoku.
+
+commands:
+  island:
+    description: Glavna SkyBlock komanda
+    usage: /island <create|home|invite|accept|deny|kick|leave|delete|reset|info|help>
+    aliases: [is, otok]
+  reset:
+    description: Brise trenutni otok i pravi novi (npr. nakon smrti)
+    usage: /reset [confirm]
+
+permissions:
+  skyblock.admin:
+    description: Pristup admin komandama
+    default: op
+  skyblock.island:
+    description: Osnovne island komande
+    default: true
