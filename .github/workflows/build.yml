@@ -19,6 +19,10 @@ jobs:
           java-version: '21'
           cache: maven
 
+      - name: List available paper-api versions
+        run: |
+          curl -s https://repo.papermc.io/repository/maven-public/io/papermc/paper/paper-api/maven-metadata.xml | tr '<' '\n' | grep 'version>' | sed 's/version>//; s#/version##' | tail -30
+
       - name: Build with Maven
         run: mvn -B clean package
 
